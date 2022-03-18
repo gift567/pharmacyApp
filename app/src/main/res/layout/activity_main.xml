@@ -7,21 +7,18 @@
     android:background="@color/navy"
     >
 
-<androidx.cardview.widget.CardView
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:layout_centerHorizontal="true"
-    app:cardCornerRadius="20dp"
-    android:layout_margin="20dp"
-    android:id="@+id/png">
+
 
     <ImageView
+        android:id="@+id/png"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-      android:src="@drawable/undraww_develop_app_re_bi4i">
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+      android:src="@drawable/tl">
 
     </ImageView>
-</androidx.cardview.widget.CardView>
+
 
     <LinearLayout
    android:id="@+id/start"
