@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.example.pharamacy.models.Product" />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/productimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/med3">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{product.name}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{String.valueOf(product.price) + 'k'}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/productready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{product.available ? `Available` : `out of stock`}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/navy"
+            android:layout_gravity="center"
+
+            >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/addtocartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add to cart"
+            android:layout_gravity="center"
+            android:enabled="@{product.available}"
+            style="@style/Widget.MaterialComponents.Button.TextButton">
+
+        </Button>
+
+    </LinearLayout>
+</layout>

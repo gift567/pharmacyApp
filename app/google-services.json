@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209267114361",
+    "project_id": "pharmacy-fe21c",
+    "storage_bucket": "pharmacy-fe21c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209267114361:android:c7dbf6bfb285698937afa8",
+        "android_client_info": {
+          "package_name": "com.example.pharamacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209267114361-pn0cq6osltlie0n8ev1mpaat4n973gd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDGRXD2F1anCA8Hh_4MnmoRLzTnEkl5S4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209267114361-pn0cq6osltlie0n8ev1mpaat4n973gd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

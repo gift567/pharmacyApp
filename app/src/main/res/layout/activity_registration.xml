@@ -2,47 +2,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/med5"
     >
-
 
     <ImageView
         android:id="@+id/png"
         android:layout_width="wrap_content"
-        android:layout_height="190dp"
+        android:layout_height="140dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/doc">
+        android:src="@drawable/paperb">
 
     </ImageView>
 
 
     <RelativeLayout
+        android:layout_below="@+id/png"
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/png"
+
         android:layout_centerHorizontal="true"
 
         >
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="50dp"
 
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Login"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Registration"
             android:textColor="@color/black"
             android:textSize="30sp">
 
@@ -53,7 +52,6 @@
 
     <LinearLayout
         android:id="@+id/please"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/start"
@@ -65,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Please Login to continue"
+            android:text="Fill in the fields to register"
             android:textColor="@color/black"
             android:textSize="17sp">
 
@@ -76,11 +74,11 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/please">
 
         <EditText
-            android:id="@+id/mail"
+            android:id="@+id/regmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -90,10 +88,9 @@
             android:layout_marginBottom="10dp"
             android:background="#30ffffff"
             android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:drawablePadding="20dp"
+            android:drawablePadding="5dp"
             android:gravity="center"
             android:hint=" Email"
-            android:outlineAmbientShadowColor="@color/black"
             android:padding="20dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
@@ -103,20 +100,19 @@
         </EditText>
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/regpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/mail"
-            android:layout_marginStart="10dp"
+            android:layout_below="@+id/regmail"
 
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawablePadding="20dp"
+            android:drawablePadding="5dp"
             android:gravity="center"
             android:hint="Password"
-            android:outlineAmbientShadowColor="@color/black"
             android:padding="20dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
@@ -125,19 +121,20 @@
 
         </EditText>
 
+
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn"
+            android:id="@+id/btnreg"
             android:layout_width="430dp"
             android:layout_height="60dp"
-            android:layout_below="@id/password"
+            android:layout_below="@id/regpassword"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:paddingLeft="50dp"
-            android:text="Login"
+            android:text="Register"
             android:textSize="17sp"
             app:cornerRadius="20dp"
+            android:paddingLeft="50dp"
 
             >
 
@@ -147,12 +144,12 @@
             android:id="@+id/forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn"
+            android:layout_below="@id/btnreg"
             android:layout_centerHorizontal="true"
-
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:text="Forgot Password?"
             android:textColor="@color/black">
 
@@ -160,18 +157,18 @@
 
 
         <TextView
-            android:id="@+id/newreg"
+            android:id="@+id/txtlogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/forgot"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="15dp"
 
 
-            android:text="Dont have an account? Register Now"
+            android:text="Already have an account? Login"
             android:textColor="@color/black">
 
         </TextView>
