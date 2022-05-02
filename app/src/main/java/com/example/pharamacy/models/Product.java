@@ -3,8 +3,6 @@ package com.example.pharamacy.models;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 
-import java.util.Objects;
-
 public class Product {
     private  String id;
     private String name;
